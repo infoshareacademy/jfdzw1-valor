@@ -1,0 +1,55 @@
+body {
+    background: aliceblue;
+}
+
+header .logo {
+    float: left;
+    max-height: 50px;
+    max-width: 51px;
+
+}
+
+header nav {
+    background: red;
+    float: left;
+
+}
+
+header nav .menu {
+    clear: both;
+
+}
+
+header nav .menu li{
+    list-style: none:
+    float: left;
+
+}
+
+main{
+    background-color: #666;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: red;
+    left: 5px;
+    top: 5px;
+}
+
+.box2 {
+    background-color: blue;
+    left: 10px;
+    top: 10px;
+}
+
+.box3 {
+    background-color: yellow;
+    left: 0;
+    top: 0;
+}
