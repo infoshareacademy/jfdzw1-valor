@@ -1,0 +1,57 @@
+body {
+    background: #f5f5f5;
+
+}
+header {
+    background: #fff;
+}
+
+header .logo {
+    float: left;
+    max-height: 50px;
+    max-width: 60px;
+}
+
+header nav {
+    background: green;
+    background: #FF0000;
+
+}
+
+header nav .menu li {
+    list-style: none;
+    display: inline;
+}
+
+.clear {
+    clear: both;
+}
+
+main {
+    background: darkslategrey;
+    position: relative;
+    z-index: 1;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.box1 {
+    background: red;
+    left: 5px;
+    top: 5px;
+    z-index: 4;
+}
+.box2 {
+    background: blue;
+    left: 10px;
+    top: 10px;
+    z-index: 8;
+}
+.box3 {
+    background: yellow;
+    z-index: 2;
+}
