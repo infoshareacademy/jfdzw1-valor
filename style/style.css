@@ -1,0 +1,38 @@
+body {
+    background: yellowgreen;
+}
+header .logo {
+    float: left;
+    max-height: 100px;
+    max-width: 109px;
+}
+header nav {
+    background: red;
+}
+header nav .menu{
+    clear: both;
+}
+
+header nav .menu li{
+    list-style: none;
+    float: left;
+}
+.clear {
+        clear: both;
+}
+.left {
+    float: left;
+}
+main {
+    background-color: aquamarine;
+    position: relative;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.box1 {background-color: red; left: 5px; top: 5px; z-index: 2}
+.box2 {background-color: yellow; left: 10px; top: 10px; z-index: 3}
+.box3 {background-color: darkorange; z-index: 1}
