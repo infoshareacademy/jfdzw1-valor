@@ -1,0 +1,21 @@
+body {
+    background: #F5F5F5;
+}
+
+#colors {
+    color: #00B278;
+    color: #45FFC2;
+    color: #2BFFBA;
+    color: #B22805;
+    color: #FF562B;
+}
+.temp {
+    color: #00B278;
+    height: 100px;
+    border: 1px solid #B22805;
+    width: 1000px;
+    margin: 10px auto;
+    background: #FFF;
+    padding-left: 25px;
+    border-radius: 3px;
+}
