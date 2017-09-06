@@ -1,5 +1,9 @@
 body {
-    background: #F5F5F5;
+    background: #FFF;
+    margin: 0px;
+    height: 100%;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
 }
 
 #colors {
@@ -9,6 +13,50 @@ body {
     color: #B22805;
     color: #FF562B;
 }
+
+.container {
+    width: 1170px;
+    margin: 0px auto;
+    padding: 0 15px;
+}
+
+.header {
+    height: 100px;
+}
+
+.header-logo {
+    float: left;
+}
+.header-logo img {
+    height: 80px;
+    width: 160px;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+ul.main-nav {
+    float: right;
+    padding: 40px 0 0;
+    margin: 0px;
+    margin-right: 100px;
+}
+.main-nav li {
+    display: inline;
+    padding: 15px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00B278;
+    font-weight: 400;
+
+}
+.main-nav li a:hover {
+    color: #B22805;
+
+}
+
 .temp {
     color: #00B278;
     height: 100px;
