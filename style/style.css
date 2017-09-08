@@ -72,6 +72,79 @@ ul.main-nav {
 
 /* MENU END*/
 
+/* FORM */
+.contact-form {
+    height: 440px;
+    color: #333;
+    background-image: url(../img/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.contact-form h2 {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: right;
+    padding: 50px 40px 0 0;
+    color: #B22805;
+}
+
+.contact-form h3 {
+    font-weight: 300;
+    font-size: 22px;
+    text-align: right;
+    padding: 10px 40px 0 0;
+    color: #B22805;
+}
+
+.contact-form .col-6 {
+    width: 50%;
+    float: left;
+}
+
+.contact-form form {
+    padding: 30px;
+
+}
+.contact-form label {
+    line-height: 2;
+    font-size: 18px;
+    color: #00B278;
+}
+
+.contact-form input[type=text],textarea {
+    line-height: 1.5;
+    font-size: 14px;
+    width: 80%;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px;
+    padding: 3px;
+}
+
+.contact-form input:focus,textarea:focus {
+    border: 1px solid #B22805;
+    box-shadow: none;
+}
+
+.contact-form input[type=submit] {
+    padding: 15px 30px;
+    background-color: #fff;
+    font-size: 18px;
+    border: 2px solid #B22805;
+    color: #B22805;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 20px;
+}
+.contact-form input[type=submit]:focus,input[type=submit]:hover {
+    background-color: #B22805;
+    color: #FFF;
+    cursor: pointer;
+}
+/* FORM END */
 
 .temp {
     color: #00B278;
