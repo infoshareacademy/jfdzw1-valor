@@ -73,6 +73,37 @@ ul.main-nav {
 /* MENU END*/
 
 
+/*HERO HEADER START*/
+
+
+/*HERO HEADER END*/
+
+/*FOOTER START*/
+ul.footer {
+    margin-left: 150px;
+}
+
+.footer li {
+    display: inline;
+    padding: 15px;
+}
+
+.footer li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #969191;
+    font-weight: 400;
+
+}
+
+.copyright {
+    color: #969191;
+    font-weight: 400;
+    margin-left: 430px;
+}
+
+/*FOOTER END*/
+
 .temp {
     color: #00B278;
     height: 100px;
