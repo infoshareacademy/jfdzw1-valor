@@ -24,16 +24,6 @@ body {
     margin-top: 100px;
 }
 
-.header-picture {
-    min-height: 500px;
-    text-align: center;
-    background-image: url("../img/sample.jpg");
-    background-repeat: no-repeat;
-    background-color: red;
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-}
 /* MENU */
 
 .header {
