@@ -70,6 +70,41 @@ ul.main-nav {
 
 }
 
+/* DESC */
+
+.classsection {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+.description-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    background-color: none;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.description-header {
+    text-align: center;
+}
+.description-text {
+    color: black;
+    text-indent: 50px;
+    text-align:justify;
+}
+
 /* MENU END*/
 
 /* FORM */
