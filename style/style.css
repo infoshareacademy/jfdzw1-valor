@@ -41,7 +41,7 @@ body {
 
 ul.main-nav {
     float: right;
-    margin: 35px 0px;
+    margin: 37px 0px;
 }
 
 .main-nav li {
@@ -57,8 +57,13 @@ ul.main-nav {
     text-decoration: none;
     text-transform: uppercase;
     color: #7b1a9f;
-    font-weight: 400;
+    font-weight: 800;
 
+}
+.main-nav li:last-child a {
+    background-color: #7b1a9f;
+    color: #fff;
+    border: 2px solid #22c2d7;
 }
 .main-nav li a:hover {
     color: #fff;
@@ -69,6 +74,14 @@ ul.main-nav {
     transition: background-color 0.3s ease-out;
 }
 
+.main-nav li:last-child a:hover {
+    color: #7b1a9f;
+    background-color: #22c2d7;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
 /* MENU END */
 
 /* HEADER START */
