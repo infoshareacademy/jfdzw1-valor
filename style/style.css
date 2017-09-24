@@ -6,14 +6,6 @@ body {
     font-size: 14px;
 }
 
-#colors {
-    color: #00B278;
-    color: #45FFC2;
-    color: #2BFFBA;
-    color: #B22805;
-    color: #FF562B;
-}
-
 .container {
     width: 1170px;
     margin: 0px auto;
@@ -21,54 +13,121 @@ body {
 }
 
 .main {
-    margin-top: 100px;
+    margin-top: 91px;
 }
 
 /* MENU */
 
-.header {
-    background-color: #FFF;
-    height: 100px;
+.menu {
+    background-color: #fff;
+    height: 90px;
     position: fixed;
     top: 0px;
     width: 100%;
-    -webkit-box-shadow: 0 1px 2px #CCC;
-    -moz-box-shadow: 0 1px 2px #CCC;
-    box-shadow: 0 1px 2px #CCC;
+    -webkit-box-shadow: 0 1px 2px #7b1a9f;
+    -moz-box-shadow: 0 1px 2px #7b1a9f;
+    box-shadow: 0 1px 2px #7b1a9f;
+    z-index: 100;
 }
 
-.header-logo {
+.menu-logo {
     float: left;
 }
-.header-logo img {
+.menu-logo img {
     height: 80px;
     width: 160px;
-    padding: 10px;
-    margin-left: 100px;
+    padding: 5px;
 }
 
 ul.main-nav {
     float: right;
-    padding: 40px 0 0;
-    margin: 0px;
-    margin-right: 100px;
+    margin: 35px 0px;
 }
+
 .main-nav li {
     display: inline;
-    padding: 15px;
+    padding: 5px;
 }
 
 .main-nav li a {
+    background-color: #fff;
+    border: 2px solid #7b1a9f;
+    padding: 10px;
+    border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #00B278;
+    color: #7b1a9f;
     font-weight: 400;
 
 }
 .main-nav li a:hover {
-    color: #B22805;
-
+    color: #fff;
+    background-color: #7b1a9f;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
 }
+
+/* MENU END */
+
+/* HEADER START */
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    background-color: #777777;
+    height: 700px;
+}
+.header-content {
+    background-color: rgba(123, 26, 159, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-content h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 250px;
+}
+
+.header-content h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.header-content-banner {
+    text-align: center;
+    padding-top: 60px;
+}
+.header-content-banner a {
+    background-color: #22c2d7;
+    color: #fff;
+    font-size: 44px;
+    text-decoration: none;
+    padding: 20px 60px;
+    border-radius: 5px;
+    border: 4px solid #fff;
+    font-weight: 800;
+}
+
+.header-content-banner a:hover {
+    background-color: #7b1a9f;
+    -webkit-transition: background-color 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+    border: 4px solid #fff;
+}
+
+/* HEADER END */
 
 /* DESC */
 
@@ -109,11 +168,21 @@ ul.main-nav {
 
 /* FORM */
 .contact-form {
-    height: 440px;
+    height: 600px;
     color: #333;
-    background-image: url(../img/bg1.png);
+    background-image: url(../img/contact-form.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contact-form-content {
+    /*background-color: rgba(212, 69, 27, 0.95);*/
+    background-color: rgba(2, 2, 2, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .contact-form .col-6 {
@@ -122,11 +191,11 @@ ul.main-nav {
 }
 
 .contact-form h2 {
-font-weight: 500;
-font-size: 32px;
+font-weight: 800;
+font-size: 36px;
 text-align: right;
 padding: 50px 40px 0 0;
-color: #B22805;
+color: #fff;
 }
 
 .contact-form h3 {
@@ -134,15 +203,14 @@ font-weight: 300;
 font-size: 22px;
 text-align: right;
 padding: 10px 40px 0 0;
-color: #B22805;
+color: #fff;
 }
 
 .contact-form p {
-    color: #333;
+    color: #fff;
     text-align: right;
-    font-size: 10px;
+    font-size: 12px;
     padding: 100px 40px 0 0;
-    color: #777;
 }
 
 .contact-form form {
@@ -150,16 +218,17 @@ color: #B22805;
 
 }
 .contact-form label {
-    line-height: 2;
-    font-size: 18px;
-    color: #00B278;
+    line-height: 1.5;
+    font-size: 26px;
+    color: #fff;
+    padding-left: 10px;
 }
 
 .contact-form input[type=text],textarea {
-    line-height: 1.5;
-    font-size: 14px;
-    width: 80%;
-    border: 1px solid #DDD;
+    line-height: 2;
+    font-size: 16px;
+    width: 100%;
+    border: 4px solid #7b1a9f;
     border-radius: 5px;
     outline: none;
     margin: 5px;
@@ -167,54 +236,51 @@ color: #B22805;
 }
 
 .contact-form input:focus,textarea:focus {
-    border: 1px solid #B22805;
+    border: 4px solid #22c2d7;
+    -webkit-transition: border 0.3s ease;
+    -moz-transition: border 0.3s ease;
+    -o-transition: border 0.3s ease;
+    transition: border 0.3s ease;
     box-shadow: none;
 }
 
 .contact-form input[type=submit] {
-    padding: 15px 30px;
-    background-color: #fff;
-    font-size: 18px;
-    border: 2px solid #B22805;
-    color: #B22805;
-    font-weight: 500;
+    padding: 15px 40px;
+    background-color: #22c2d7;
+    font-size: 34px;
+    border: 4px solid #fff;
+    color: #fff;
+    font-weight: 800;
     border-radius: 5px;
-    margin: 20px;
+    margin: 30px 10px;
 }
 .contact-form input[type=submit]:focus,input[type=submit]:hover {
-    background-color: #B22805;
-    color: #FFF;
+    background-color: #7b1a9f;
+    -webkit-transition: background-color 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
     cursor: pointer;
 }
 /* FORM END */
 
-/*HERO HEADER START*/
-
-
-/*HERO HEADER END*/
-
 /*FOOTER START*/
-ul.footer {
-    margin-left: 150px;
+
+.footer {
+    background-color: #333;
+    color: #eee;
+    height: 300px;
 }
 
-.footer li {
-    display: inline;
-    padding: 15px;
+.footer ul {
+    padding: 50px 0px;
+    list-style-type: none;
 }
 
 .footer li a {
+    color: #eee;
     text-decoration: none;
-    text-transform: uppercase;
-    color: #969191;
-    font-weight: 400;
 
-}
-
-.copyright {
-    color: #969191;
-    font-weight: 400;
-    margin-left: 430px;
 }
 
 /*FOOTER END*/
