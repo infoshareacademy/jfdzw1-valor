@@ -280,6 +280,7 @@ color: #fff;
 /*FOOTER START*/
 
 .footer {
+    display: grid;
     background-color: #333;
     color: #eee;
     height: 300px;
