@@ -75,7 +75,7 @@ body {
 }
 
 .shrink {
-    height: 45px!important;
+    height: 44px!important;
     transition: all 0.3s ease;
 }
 
@@ -87,14 +87,15 @@ body {
 }
 
 .shrink ul.main-nav {
-    margin: 15px 0px;
+    margin: 12px 0px;
     transition: all 0.3s ease;
 }
 
 .shrink .main-nav li a {
     border: 1px solid #7b1a9f;
     font-weight: 400;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
+    font-size: 12px;
 }
 
 .shrink .main-nav li:last-child a {
@@ -133,6 +134,7 @@ ul.main-nav {
     text-transform: uppercase;
     color: #7b1a9f;
     font-weight: 800;
+    font-size: 14px;
     transition: all 0.3s ease;
 }
 
@@ -287,7 +289,7 @@ ul.main-nav {
 
 .contact-form h2 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 30px;
     text-align: right;
     padding: 50px 40px 0 0;
     color: #fff;
