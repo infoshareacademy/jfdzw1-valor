@@ -6,11 +6,12 @@
     <meta name="keyword" content="kantor, kalkulator walut, kursy walut"/>
     <link rel="stylesheet" type="text/css" href="style/style.css"/>
     <title>Kalkulator walut - Valor</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <!-- MENU -->
-<div class="menu">
+<nav class="menu">
     <div class="container">
         <div class="menu-logo">
             <img src="img/valor-logo.jpg" alt="Valor - logo">
@@ -22,7 +23,7 @@
             <li><a href="#contact-form">Kontakt</a></li>
         </ul>
     </div>
-</div>
+</nav>
 <div class="main">
 
     <!-- HEAD -->
@@ -144,4 +145,13 @@
 </div>
 
 </body>
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('nav').addClass('shrink');
+        } else {
+            $('nav').removeClass('shrink');
+        }
+    });
+</script>
 </html>
