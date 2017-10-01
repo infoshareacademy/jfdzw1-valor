@@ -147,7 +147,7 @@
         </div>
     </div>
 </div>
-
+<div class="back-icon" id="back-icon"></div>
 </body>
 <script>
     $(window).scroll(function() {
@@ -156,6 +156,15 @@
         } else {
             $('nav').removeClass('shrink');
         }
+
+        if ($(document).scrollTop() > 500) {
+            $('#back-icon').addClass('show');
+        } else {
+            $('#back-icon').removeClass('show');
+        }
+    });
+    $("#back-icon").on("click", function() {
+        $("body").scrollTop(0);
     });
 </script>
 </html>

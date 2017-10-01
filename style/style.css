@@ -414,13 +414,23 @@ ul.main-nav {
 
 /*FOOTER END*/
 
-.temp {
-    color: #00B278;
-    height: 100px;
-    border: 1px solid #B22805;
-    width: 1000px;
-    margin: 100px auto;
-    background: #FFF;
-    padding-left: 25px;
-    border-radius: 3px;
+.back-icon {
+    background-image: url(../img/arrow-up.png);
+    background-size: 50px;
+    background-color: #22c2d7;
+    content: 'top';
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: opacity 0.6s ease-in;
+    cursor: pointer;
+}
+
+.show {
+    opacity: 0.7;
+    transition: opacity 0.6s ease-in;
 }
