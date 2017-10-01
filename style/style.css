@@ -93,15 +93,15 @@ body {
 }
 
 .shrink .main-nav li a {
-    border: 1px solid #7b1a9f;
+    border: 1px solid transparent;
     font-weight: 400;
     transition: all 0.3s ease;
     font-size: 12px;
 }
-
+/*
 .shrink .main-nav li:last-child a {
-    border: 1px solid #22c2d7;
-}
+    border: 1px solid transparent;
+}*/
 
 .menu-logo {
     float: left;
@@ -128,7 +128,7 @@ ul.main-nav {
 
 .main-nav li a {
     background-color: #fff;
-    border: 2px solid #7b1a9f;
+    border: 2px solid transparent;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
@@ -138,12 +138,12 @@ ul.main-nav {
     font-size: 14px;
     transition: all 0.3s ease;
 }
-
+/*
 .main-nav li:last-child a {
     background-color: #7b1a9f;
     color: #fff;
-    border: 2px solid #22c2d7;
-}
+    border: 2px solid transparent;
+}*/
 
 .main-nav li a:hover {
     color: #fff;
