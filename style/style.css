@@ -227,10 +227,36 @@ ul.main-nav {
 
 /* DESC */
 
-.classsection {
+.backgrounddesc {
+    background-color: #dedede;
+}
+
+.flexbox-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.floating-box {
+    width: 300px;
+    height: 400px;
+    background-color: none;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.description-title {
+    font-weight: 700;
+    padding-top: 0.83em;
+    text-align: center;
+}
+
+/*.classsection {
     margin-right: 0;
     margin-left: 0;
     text-align: center;
+    background-color: #777777;
 }
 
 .description-title {
@@ -241,15 +267,10 @@ ul.main-nav {
 }
 
 .floating-box {
-    display: inline-block;
     width: 300px;
     height: 400px;
-    padding: 5px;
     background-color: none;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    margin-right: 10px;
-    margin-left: 10px;
+    align-items: center;
 }
 
 .description-header {
@@ -260,7 +281,7 @@ ul.main-nav {
     color: black;
     text-indent: 50px;
     text-align: justify;
-}
+}*/
 
 /* MENU END*/
 
