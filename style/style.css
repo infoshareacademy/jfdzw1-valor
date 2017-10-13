@@ -225,7 +225,7 @@ ul.main-nav {
 
 /* HEADER END */
 
-/* DESC */
+/* DESC START */
 
 .backgrounddesc {
     background-color: #dedede;
@@ -246,44 +246,54 @@ ul.main-nav {
     padding: 20px;
 }
 
-.description-title {
-    font-weight: 700;
-    padding-top: 0.83em;
+.flexbox-img {
     text-align: center;
-}
-
-/*.classsection {
-    margin-right: 0;
-    margin-left: 0;
-    text-align: center;
-    background-color: #777777;
-}
-
-.description-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.floating-box {
-    width: 300px;
-    height: 400px;
-    background-color: none;
-    align-items: center;
 }
 
 .description-header {
     text-align: center;
 }
 
-.description-text {
-    color: black;
-    text-indent: 50px;
-    text-align: justify;
-}*/
+.description-title {
+    font-weight: 700;
+    padding-top: 0.83em;
+    text-align: center;
+}
 
-/* MENU END*/
+/* DESC END */
+
+/* TEAM START */
+.backgroundteam {
+    background-color: #dedede;
+}
+
+.flexbox-containerteam {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.floating-boxteam {
+    width: 300px;
+    height: 400px;
+    background-color: none;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.description-headerteam {
+    text-align: center;
+}
+
+.description-titleteam {
+    font-weight: 700;
+    padding-top: 0.83em;
+    text-align: center;
+}
+
+/* TEAM END */
+
 
 /* FORM */
 .contact-form {
@@ -394,20 +404,63 @@ ul.main-nav {
 
 /*FOOTER START*/
 
-.footer {
-    display: grid;
-    background-color: #333;
-    color: #eee;
-    height: 300px;
+.Footer {
+    display: flex;
+    padding: 15px;
+    background-color: #58595b;
 }
 
-.footer ul {
-    padding: 50px 0px;
-    list-style-type: none;
+.FooterMenu {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.footer li a {
-    color: #eee;
+.Footer__topMenu {
+    text-align: center;
+}
+
+.Footer__topMenu__item {
+    display: inline;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.Footer__topMenu__item2 {
+    background-color: #58595b;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #7b1a9f;
+    font-weight: 800;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.Footer__topMenu__item2:hover {
+    color: #fff;
+    background-color: #7b1a9f;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+.Footer__topMenu__link {
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 5px 15px 15px;
+    color: #dedede;
+}
+
+.Footer__bottomMenu {
+    text-align: center;
+    background-color: #58595b;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    color: #dedede;
     text-decoration: none;
 
 }
