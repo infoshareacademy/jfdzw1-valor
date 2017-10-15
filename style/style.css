@@ -415,39 +415,23 @@ ul.main-nav {
     justify-content: space-evenly;
 }
 
-.Footer__topMenu {
+.FootertopMenu {
     text-align: center;
+    color: #dedede;
+
 }
 
-.Footer__topMenu__item {
+.FootertopMenuitem {
     display: inline;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
     cursor: pointer;
-}
-
-.Footer__topMenu__item2 {
-    background-color: #58595b;
-    padding: 10px;
-    border-radius: 5px;
     text-decoration: none;
-    color: #7b1a9f;
-    font-weight: 800;
-    font-size: 14px;
-    transition: all 0.3s ease;
 }
 
-.Footer__topMenu__item2:hover {
-    color: #fff;
-    background-color: #7b1a9f;
-    -webkit-transition: background-color 0.3s ease-out;
-    -moz-transition: background-color 0.3s ease-out;
-    -o-transition: background-color 0.3s ease-out;
-    transition: background-color 0.3s ease-out;
+.FootertopMenuitem a:hover {
+    text-decoration: underline;
 }
 
-.Footer__topMenu__link {
-    background-color: transparent;
+.FootertopMenulink {
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
@@ -455,7 +439,7 @@ ul.main-nav {
     color: #dedede;
 }
 
-.Footer__bottomMenu {
+.FooterbottomMenu {
     text-align: center;
     background-color: #58595b;
     padding-top: 1px;
