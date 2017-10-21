@@ -239,7 +239,7 @@ ul.main-nav {
 
 .floating-box {
     width: 300px;
-    height: 400px;
+    height: 300px;
     background-color: none;
     align-items: center;
     text-align: justify;
@@ -248,6 +248,14 @@ ul.main-nav {
 
 .flexbox-img {
     text-align: center;
+}
+
+#description:before, #team:before {
+    display: block;
+    content: " ";
+    margin-top: -50px;
+    height: 50px;
+    visibility: hidden;
 }
 
 .description-header {
@@ -270,7 +278,7 @@ ul.main-nav {
 .flexbox-containerteam {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 2em;
 }
 
 .floating-boxteam {
@@ -280,15 +288,28 @@ ul.main-nav {
     align-items: center;
     text-align: justify;
     padding: 20px;
+
+}
+
+.facebook-img {
+    height: 1.3em;
+    width: 1.3em;
+    padding-left: 1em;
 }
 
 .description-headerteam {
     text-align: center;
 }
 
+.description-link {
+    text-decoration: none;
+    color: #333333;
+
+}
+
+
 .description-titleteam {
     font-weight: 700;
-    padding-top: 0.83em;
     text-align: center;
 }
 
@@ -404,34 +425,34 @@ ul.main-nav {
 
 /*FOOTER START*/
 
-.Footer {
+.footer {
     display: flex;
     padding: 15px;
     background-color: #58595b;
 }
 
-.FooterMenu {
+.footer-menu {
     display: flex;
     justify-content: space-evenly;
 }
 
-.FootertopMenu {
+.footer-top-menu {
     text-align: center;
     color: #dedede;
 
 }
 
-.FootertopMenuitem {
+.footer-top-menu-item {
     display: inline;
     cursor: pointer;
     text-decoration: none;
 }
 
-.FootertopMenuitem a:hover {
+.footer-top-menu-item a:hover {
     text-decoration: underline;
 }
 
-.FootertopMenulink {
+.footer-top-menu-link {
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
@@ -439,7 +460,7 @@ ul.main-nav {
     color: #dedede;
 }
 
-.FooterbottomMenu {
+.footer-bottom-menu {
     text-align: center;
     background-color: #58595b;
     padding-top: 1px;
