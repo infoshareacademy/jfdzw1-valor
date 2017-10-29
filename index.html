@@ -7,9 +7,11 @@
     <link rel="stylesheet" type="text/css" href="style/style.css"/>
     <title>Kalkulator walut - Valor</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.js"
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -50,7 +52,7 @@
             </div>
 
             <div class="flexbox-container">
-                    <div class="floating-box">
+                    <div class="floating-box" data-aos="zoom-in">
                         <div class="flexbox-img">
                             <img src="img/wymiana.png" alt="wymiana"/>
                         </div>
@@ -58,7 +60,7 @@
                         <p class="description-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
                             pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
                     </div>
-                    <div class="floating-box">
+                    <div class="floating-box" data-aos="fade-left">
                         <div class="flexbox-img">
                             <img src="img/estymacja.png" alt="estymacja"/>
                         </div>
@@ -90,11 +92,11 @@
     <div class="backgroundteam" id="team">
         <div class="container">
             <div class="description-titleteam">
-                <h2>Zespół projektowy tworzą:</h2>
+                <h2>Zespół projektowy</h2>
             </div>
 
             <div class="flexbox-containerteam">
-                <div class="floating-boxteam">
+                <div class="floating-boxteam" data-aos="fade-up-right">
                     <div class="flexbox-img">
                         <img src="img/Krzysiek.png" alt="wymiana"/>
                     </div>
@@ -112,7 +114,7 @@
                         <a href="#"><img class="facebook-img"  src="img/github.png" alt="facebook"/></a>
                     </div>
                 </div>
-                <div class="floating-boxteam">
+                <div class="floating-boxteam" data-aos="fade-up-left">
                     <div class="flexbox-img">
                         <img src="img/Szymon.png" alt="wymiana"/>
                     </div>
@@ -205,5 +207,8 @@
     $("#back-icon").on("click", function() {
         $("body,html").animate({ scrollTop: 0 }, 'slow');
     });
+</script>
+<script>
+    AOS.init();
 </script>
 </html>
