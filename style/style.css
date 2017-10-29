@@ -198,7 +198,8 @@ ul.main-nav {
 /* DESC END */
 /* TEAM START */
 .backgroundteam {
-  background-color: #dedede; }
+    background-image: url(../img/laptop.jpg)
+}
 
 .flexbox-containerteam {
   display: flex;
@@ -206,7 +207,6 @@ ul.main-nav {
   padding: 2em; }
 
 .floating-boxteam {
-<<<<<<< HEAD
     width: 300px;
     height: 400px;
     background-color: white;
@@ -234,19 +234,6 @@ ul.main-nav {
     transform: scale(1.2);
     transition: 0.3s transform linear;
 }
-=======
-  width: 300px;
-  height: 400px;
-  background-color: none;
-  align-items: center;
-  text-align: justify;
-  padding: 20px; }
-
-.facebook-img {
-  height: 1.3em;
-  width: 1.3em;
-  padding-left: 1em; }
->>>>>>> release
 
 .description-headerteam {
   text-align: center; }
