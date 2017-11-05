@@ -9,7 +9,6 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/style.css"/>
     <title>Kalkulator walut - Valor</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -17,11 +16,11 @@
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+
 </head>
 <body>
-
-<!-- MENU -->
-<nav class="menu">
+<nav class="navbar navbar-default nav-main">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -32,119 +31,99 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand nav-logo" href="#"><img src="img/valor-logo.jpg" alt="Valor - logo"></a>
         </div>
-        <div class="menu-logo">
-            <img src="img/valor-logo.jpg" alt="Valor - logo">
-        </div>
-        <ul class="main-nav">
-            <li><a href="#header">Strona główna</a></li>
-            <li><a href="#description">Nasza aplikacja</a></li>
-            <li><a href="#team">Zespół Deweloperski</a></li>
-            <li><a href="#contact-form">Kontakt</a></li>
-        </ul>
-    </div>
-</nav>
 
-<!-- HEAD -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#header">Strona główna</a></li>
+                <li><a href="#description">Nasza aplikacja</a></li>
+                <li><a href="#team">Zespół Deweloperski</a></li>
+                <li><a href="#contact-form">Kontakt</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
 <div class="header" id="header">
     <div class="header-content">
+        <div class="container">
+            <div class="col-md-12 header-content-in">
 
-        <h1>Zarządzanie walutami</h1>
-        <h2>Śledź aktualne kursy walut </h2>
-        <h2>Zarządzaj transakcjami walutowymi</h2>
-        <div class="header-content-banner">
-            <a href="#contact-form">Dołącz do nas</a>
+                <h1>Zarządzanie walutami</h1>
+                <h2>Śledź aktualne kursy walut </h2>
+                <h2>Zarządzaj transakcjami walutowymi</h2>
+                <div class="header-content-banner">
+                    <a href="#contact-form">Dołącz do nas</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 <!-- APP DESC -->
-<div class="backgrounddesc" id="description">
+<div id="description">
     <div class="container">
-        <div class="description-title">
-            <h2>Kontrola transakcji jest na wyciągnięcie ręki!</h2>
+        <h1>Kontrola transakcji jest na wyciągnięcie ręki!</h1>
+        <div class="col-xs-12 col-sm-6 col-md-3 flex-box">
+            <img src="img/wymiana.png" alt="wymiana"/>
+            <h3>Transakcje kapitałowe</h3>
+            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
         </div>
-
-        <div class="flexbox-container">
-            <div class="floating-box" data-aos="zoom-in">
-                <div class="flexbox-img">
-                    <img src="img/wymiana.png" alt="wymiana"/>
-                </div>
-                <h3 class="description-header">Transakcje kapitałowe</h3>
-                <p class="description-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-            </div>
-            <div class="floating-box" data-aos="fade-left">
-                <div class="flexbox-img">
-                    <img src="img/estymacja.png" alt="estymacja"/>
-                </div>
-                <h3 class="description-header">Estymacja profitu</h3>
-                <p class="description-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-            </div>
-            <div class="floating-box">
-                <div class="flexbox-img">
-                    <img src="img/portfel.png" alt="portfel"/>
-                </div>
-                <h3 class="description-header">Portfel</h3>
-                <p class="description-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-            </div>
-            <div class="floating-box">
-                <div class="flexbox-img">
-                    <img src="img/info.png" alt="info"/>
-                </div>
-                <h3 class="description-header">InfoFlesh</h3>
-                <p class="description-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-            </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 flex-box">
+            <img src="img/estymacja.png" alt="estymacja"/>
+            <h3>Estymacja profitu</h3>
+            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 flex-box">
+            <img src="img/portfel.png" alt="portfel"/>
+            <h3>Portfel</h3>
+            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 flex-box">
+            <img src="img/info.png" alt="info"/>
+            <h3>InfoFlesh</h3>
+            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
         </div>
     </div>
 </div>
-
 <!-- TEAM -->
-<div class="backgroundteam" id="team">
+<div id="team">
     <div class="container">
-        <div class="description-titleteam">
-            <h2>Zespół projektowy</h2>
-        </div>
-
-        <div class="flexbox-containerteam">
-            <div class="floating-boxteam" data-aos="fade-up-right">
-                <div class="flexbox-img">
-                    <img src="img/Krzysiek.png" alt="wymiana"/>
-                </div>
-                <h3 class="description-headerteam">
-                    <a class="description-link" href="#team">Krzysztof Palka</a>
-                </h3>
-                <p class="description-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
-                    Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a,
-                    convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.</p>
-                <div class="flexbox-img">
-                    <a href="#"><img class="facebook-img" src="img/facebook.png" alt="facebook"/></a>
-                    <a href="#"><img class="facebook-img" src="img/email.png" alt="facebook"/></a>
-                    <a href="#"><img class="facebook-img" src="img/linkedin.png" alt="facebook"/></a>
-                    <a href="#"><img class="facebook-img" src="img/github.png" alt="facebook"/></a>
-                </div>
+        <h1>Zespół projektowy</h1>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <div>
+                <img src="img/Krzysiek.png" alt="wymiana"/>
             </div>
-            <div class="floating-boxteam" data-aos="fade-up-left">
-                <div class="flexbox-img">
-                    <img src="img/Szymon.png" alt="wymiana"/>
-                </div>
-                <h3 class="description-headerteam">
-                    <a class="description-link" href="#team">Szymon Nikiel</a>
-                </h3>
-                <p class="description-text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
-                    Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a,
-                    convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.</p>
-                <div class="flexbox-img">
-                    <a href="#"><img class="facebook-img" src="img/facebook.png" alt="facebook"/></a>
-                    <a href="#"><img class="facebook-img" src="img/email.png" alt="facebook"/></a>
-                    <a href="#"><img class="facebook-img" src="img/linkedin.png" alt="facebook"/></a>
-                    <a href="#"><img class="facebook-img" src="img/github.png" alt="facebook"/></a>
-                </div>
+            <h3>Krzysztof Palka</h3>
+            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
+                Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a,
+                convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.</p>
+            <div>
+                <a href="#"><img src="img/facebook.png" alt="facebook"/></a>
+                <a href="#"><img src="img/email.png" alt="facebook"/></a>
+                <a href="#"><img src="img/linkedin.png" alt="facebook"/></a>
+                <a href="#"><img src="img/github.png" alt="facebook"/></a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <div>
+                <img src="img/Szymon.png" alt="wymiana"/>
+            </div>
+            <h3>Szymon Nikiel</h3>
+            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
+                Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a,
+                convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.</p>
+            <div>
+                <a href="#"><img src="img/facebook.png" alt="facebook"/></a>
+                <a href="#"><img src="img/email.png" alt="facebook"/></a>
+                <a href="#"><img src="img/linkedin.png" alt="facebook"/></a>
+                <a href="#"><img src="img/github.png" alt="facebook"/></a>
             </div>
         </div>
     </div>
@@ -154,13 +133,13 @@
 <div class="contact-form" id="contact-form">
     <div class="contact-form-content">
         <div class="container">
-            <div class="col-6">
+            <div class="col-xs-12 col-sm-12 col-md-6">
                 <h2><span class="font-bg">dołącz do nas, poznaj naszą aplikacje, nie przegap premiery</span></h2>
                 <h3>zapisz się do newslettera*</h3>
                 <p>*Otrzymasz tylko jeden mail z informacją o premierze naszej aplikacji. <br>
                     Gwarantujemy bezpieczeństwo danych osobowych</p>
             </div>
-            <div class="col-6">
+            <div class="col-xs-12 col-sm-12 col-md-6">
                 <form action="mailto:newsletter@valor.com" method="post" enctype="text/plain">
                     <label for="name">imię</label><br>
                     <input type="text" name="name"><br>
@@ -178,38 +157,19 @@
 <!-- FOOTER -->
 <div class="footer">
     <div class="container">
-        <div class="footer-top-menu">
-            <div class="footer-top-menu-item">
-                <a class="footer-top-menu-link" href="#header">Strona główna</a> |
-            </div>
-            <div class="footer-top-menu-item">
-                <a class="footer-top-menu-link" href="#description">Nasza aplikacja</a> |
-            </div>
-            <div class="footer-top-menu-item">
-                <a class="footer-top-menu-link" href="#team">Zespół Deweloperski</a> |
-            </div>
-            <div class="footer-top-menu-item">
-                <a class="footer-top-menu-link" href="#contact-form">Kontakt</a>
-            </div>
+        <div>
+            <a href="#header">Strona główna</a> |
+            <a href="#description">Nasza aplikacja</a> |
+            <a href="#team">Zespół Deweloperski</a> |
+            <a href="#contact-form">Kontakt</a>
         </div>
+        <p class="copyright">&copy; Copyright by Valor</p>
     </div>
 </div>
-
-<div class="footer-bottom-menu">
-    <p class="copyright">&copy; Copyright by Valor</p>
-</div>
-
-
 <div class="back-icon" id="back-icon"></div>
 </body>
 <script>
   $(window).scroll(function () {
-    if ($(document).scrollTop() > 50) {
-      $('nav').addClass('shrink');
-    } else {
-      $('nav').removeClass('shrink');
-    }
-
     if ($(document).scrollTop() > 500) {
       $('#back-icon').addClass('show');
     } else {
@@ -220,7 +180,6 @@
     $("body,html").animate({scrollTop: 0}, 'slow');
   });
 </script>
-<script>
-  AOS.init();
-</script>
+</html>
+</body>
 </html>
