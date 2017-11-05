@@ -24,10 +24,16 @@ nav .nav-logo {
     width: 80px; }
 
 @media screen and (max-width: 800px) {
+  .container, .col-md-12, .col-xs-12 {
+    padding-left: 5px !important;
+    padding-right: 5px !important; }
+
   .header {
     min-height: 500px !important; }
     .header .header-content-in {
-      padding-top: 10% !important; } }
+      padding-top: 10% !important; }
+      .header .header-content-in h1 {
+        font-size: 4em !important; } }
 .header {
   background-image: url(../img/header.jpg);
   background-repeat: no-repeat;

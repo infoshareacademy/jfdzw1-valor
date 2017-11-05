@@ -35,10 +35,17 @@ nav {
 }
 
 @media screen and (max-width: 800px) {
+  .container, .col-md-12, .col-xs-12 {
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+  }
   .header {
     min-height: 500px!important;
     .header-content-in {
       padding-top: 10%!important;
+      h1 {
+        font-size: 4em!important;
+      }
     }
   }
 }
