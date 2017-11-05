@@ -99,6 +99,14 @@ nav {
   }
 }
 
+#description:before, #team:before, #contact-form:before {
+  content: ' ';
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+  visibility: hidden;
+}
+
 .back-icon {
   background-image: url(../img/arrow-up.png);
   background-size: 50px;

@@ -20,7 +20,7 @@
 
 </head>
 <body>
-<nav class="navbar navbar-default nav-main">
+<nav class="navbar navbar-default nav-main navbar-fixed-top" id="navbar">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -132,7 +132,7 @@
     <div class="contact-form-content">
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-6">
-                <h2><span class="font-bg">dołącz do nas, poznaj naszą aplikacje, nie przegap premiery</span></h2>
+                <h2><span>dołącz do nas, poznaj naszą aplikacje, nie przegap premiery</span></h2>
                 <h3>zapisz się do newslettera*</h3>
                 <p>*Otrzymasz tylko jeden mail z informacją o premierze naszej aplikacji. <br>
                     Gwarantujemy bezpieczeństwo danych osobowych</p>
@@ -166,6 +166,13 @@
 <div class="back-icon" id="back-icon"></div>
 </body>
 <script>
+  $(window).resize(function() {
+    if ($(window).width() < 800) {
+      $("#navbar").removeClass('navbar-fixed-top');
+    } else {
+      $("#navbar").addClass('navbar-fixed-top');
+    }
+  });
   $(window).scroll(function () {
     if ($(document).scrollTop() > 500) {
       $('#back-icon').addClass('show');
