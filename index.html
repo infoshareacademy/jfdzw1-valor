@@ -40,7 +40,7 @@
                 <li><a href="#header">Strona główna</a></li>
                 <li><a href="#description">Nasza aplikacja</a></li>
                 <li><a href="#team">Zespół Deweloperski</a></li>
-                <li><a href="#contact-form">Kontakt</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -63,29 +63,37 @@
 <div id="description">
     <div class="container">
         <h1>Kontrola transakcji jest na wyciągnięcie ręki!</h1>
-        <div class="col-xs-12 col-sm-6 col-md-3 flex-box">
-            <img src="img/wymiana.png" alt="wymiana"/>
-            <h3>Transakcje kapitałowe</h3>
-            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+        <div class="col-xs-12 col-sm-6 col-md-3 ">
+            <div class="flex-box">
+                <img src="img/wymiana.png" alt="wymiana"/>
+                <h3>Transakcje kapitałowe</h3>
+                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 flex-box">
-            <img src="img/estymacja.png" alt="estymacja"/>
-            <h3>Estymacja profitu</h3>
-            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="flex-box">
+                <img src="img/estymacja.png" alt="estymacja"/>
+                <h3>Estymacja profitu</h3>
+                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 flex-box">
-            <img src="img/portfel.png" alt="portfel"/>
-            <h3>Portfel</h3>
-            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="flex-box">
+                <img src="img/portfel.png" alt="portfel"/>
+                <h3>Portfel</h3>
+                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-3 flex-box">
-            <img src="img/info.png" alt="info"/>
-            <h3>InfoFlesh</h3>
-            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="flex-box">
+                <img src="img/info.png" alt="info"/>
+                <h3>InfoFlesh</h3>
+                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                    pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
+            </div>
         </div>
     </div>
 </div>
@@ -128,16 +136,16 @@
     </div>
 </div>
 <!-- FORM -->
-<div class="contact-form" id="contact-form">
-    <div class="contact-form-content">
+<div class="contact" id="contact">
+    <div class="contact-content">
         <div class="container">
-            <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 contact-desc">
                 <h2><span>dołącz do nas, poznaj naszą aplikacje, nie przegap premiery</span></h2>
                 <h3>zapisz się do newslettera*</h3>
                 <p>*Otrzymasz tylko jeden mail z informacją o premierze naszej aplikacji. <br>
                     Gwarantujemy bezpieczeństwo danych osobowych</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 contact-form">
                 <form action="mailto:newsletter@valor.com" method="post" enctype="text/plain">
                     <label for="name">imię</label><br>
                     <input type="text" name="name"><br>
@@ -158,7 +166,7 @@
             <a href="#header">Strona główna</a> |
             <a href="#description">Nasza aplikacja</a> |
             <a href="#team">Zespół Deweloperski</a> |
-            <a href="#contact-form">Kontakt</a>
+            <a href="#contact">Kontakt</a>
         </div>
         <p class="copyright">&copy; Copyright by Valor</p>
     </div>
@@ -166,7 +174,7 @@
 <div class="back-icon" id="back-icon"></div>
 </body>
 <script>
-  $(window).resize(function() {
+  $(window).resize(function () {
     if ($(window).width() < 800) {
       $("#navbar").removeClass('navbar-fixed-top');
     } else {

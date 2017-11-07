@@ -76,12 +76,56 @@ nav .nav-logo {
             background-color: #7b1a9f;
             border: 4px solid #fff; }
 
-#description:before, #team:before, #contact-form:before {
-  content: ' ';
-  display: block;
-  height: 50px;
-  margin-top: -50px;
-  visibility: hidden; }
+.contact-content {
+  padding-top: 50px; }
+  .contact-content .contact-desc {
+    text-align: right;
+    padding-right: 40px; }
+    .contact-content .contact-desc h2 {
+      font-weight: 800;
+      font-size: 30px;
+      text-align: right;
+      color: #fff; }
+      .contact-content .contact-desc h2 span {
+        background-color: #7b1a9f; }
+    .contact-content .contact-desc h3 {
+      padding-bottom: 50px; }
+  .contact-content form label {
+    line-height: 1.5;
+    font-size: 26px;
+    padding-left: 10px; }
+  .contact-content form input[type=text], .contact-content form textarea {
+    line-height: 2;
+    font-size: 16px;
+    width: 100%;
+    border: 4px solid #7b1a9f;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px;
+    padding: 3px;
+    color: #333; }
+    .contact-content form input[type=text]:focus, .contact-content form textarea:focus {
+      border: 4px solid #22c2d7;
+      -webkit-transition: border 0.3s ease;
+      -moz-transition: border 0.3s ease;
+      -o-transition: border 0.3s ease;
+      transition: border 0.3s ease;
+      box-shadow: none; }
+  .contact-content form input[type=submit] {
+    padding: 15px 40px;
+    background-color: #22c2d7;
+    font-size: 34px;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 5px;
+    margin: 30px 10px; }
+    .contact-content form input[type=submit]:focus, .contact-content form input[type=submit]:hover {
+      background-color: #7b1a9f;
+      -webkit-transition: background-color 0.3s ease-in;
+      -moz-transition: background-color 0.3s ease-in;
+      -o-transition: background-color 0.3s ease-in;
+      transition: background-color 0.3s ease-in;
+      cursor: pointer; }
 
 .back-icon {
   background-image: url(../img/arrow-up.png);
