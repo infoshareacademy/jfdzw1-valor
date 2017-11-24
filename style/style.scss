@@ -109,7 +109,7 @@ nav {
   text-align: center;
   padding-top: 35px;
   h2 {
-    font-family: FreeSerif;
+    font-family: FreeSerif, serif;
     font-size: 3em;
     font-weight: bold;
   }
@@ -126,13 +126,30 @@ nav {
     padding-left: 40px;
   }
 }
+
+//product
+.product-content {
+  background-color: rgba(245, 238, 238, 0.8);
+  text-align: center;
+  padding-top: 2em;
+  .box-product {
+    text-align: left;
+    padding-top: 1em;
+  }
+  .img-product {
+    float: left;
+  }
+  h5 {
+    font-weight: bold;
+  }
+}
 //team form
 .team-content {
   background-color: rgba(245, 238, 238, 0.8);
   text-align: center;
   padding-top: 40px;
   h2 {
-    font-family: FreeSerif;
+    font-family: FreeSerif, serif;
     font-size: 3em;
     font-weight: bold;
     padding-bottom: 20px;
@@ -248,7 +265,7 @@ nav {
 }
 //footer
 .footer {
-  background-color: #58595b;
+  background-color: #4a4b4d;
   text-align: center;
   color: #dedede;
   text-decoration: none;

@@ -84,7 +84,7 @@ nav .nav-logo {
   text-align: center;
   padding-top: 35px; }
   .description-content h2 {
-    font-family: FreeSerif;
+    font-family: FreeSerif, serif;
     font-size: 3em;
     font-weight: bold; }
   .description-content h4 {
@@ -97,12 +97,24 @@ nav .nav-logo {
     padding-top: 40px;
     padding-left: 40px; }
 
+.product-content {
+  background-color: rgba(245, 238, 238, 0.8);
+  text-align: center;
+  padding-top: 2em; }
+  .product-content .box-product {
+    text-align: left;
+    padding-top: 1em; }
+  .product-content .img-product {
+    float: left; }
+  .product-content h5 {
+    font-weight: bold; }
+
 .team-content {
   background-color: rgba(245, 238, 238, 0.8);
   text-align: center;
   padding-top: 40px; }
   .team-content h2 {
-    font-family: FreeSerif;
+    font-family: FreeSerif, serif;
     font-size: 3em;
     font-weight: bold;
     padding-bottom: 20px; }
@@ -196,7 +208,7 @@ nav .nav-logo {
   transition: opacity 0.6s ease-in; }
 
 .footer {
-  background-color: #58595b;
+  background-color: #4a4b4d;
   text-align: center;
   color: #dedede;
   text-decoration: none; }
