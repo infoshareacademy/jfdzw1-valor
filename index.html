@@ -99,15 +99,19 @@
             </div>
         </div>
     </div>
-    <!-- Product -->
+    <!-- PRODUCT -->
     <div class="product-content">
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-6">
                 <div class="box-product">
-                    <img src="img/mobilka.png" class="img-responsive img-product" alt="mobilka"/>
-                    <h5>Dostęp mobilny</h5>
-                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-                        pellentesque dui, non felis.</p>
+                    <div class="img-product">
+                        <img src="img/mobilka.png" class="img-responsive" alt="mobilka"/>
+                    </div>
+                    <div class="product-text">
+                        <h5>Dostęp mobilny</h5>
+                        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+                            pellentesque dui, non felis.</p>
+                    </div>
                 </div>
                 <div class="box-product">
                     <img src="img/wymianawaluty.png" class="img-responsive img-product" alt="mobilka"/>
@@ -232,25 +236,38 @@
     </div>
 </div>
 <div class="back-icon" id="back-icon"></div>
+<!-- COOKIES -->
+<div class="cookies-message-container">
+    <div class="container">
+        <div class=".col-xs-12 .col-md-2">
+            <p>Ta strona używa ciasteczek (cookies), dzięki którym nasz serwis może działać lepiej. Zapoznaj się ze
+                szczegółami regulaminu
+                <a href="#">Regulamin.</a><button type="button" class="btn btn-primary">Rozumiem</button>
+            </p>
+        </div>
+    </div>
+
+</div>
+
 </body>
 <script>
-  $(window).resize(function () {
-    if ($(window).width() < 800) {
-      $("#navbar").removeClass('navbar-fixed-top');
-    } else {
-      $("#navbar").addClass('navbar-fixed-top');
-    }
-  });
-  $(window).scroll(function () {
-    if ($(document).scrollTop() > 500) {
-      $('#back-icon').addClass('show');
-    } else {
-      $('#back-icon').removeClass('show');
-    }
-  });
-  $("#back-icon").on("click", function () {
-    $("body,html").animate({scrollTop: 0}, 'slow');
-  });
+    $(window).resize(function () {
+        if ($(window).width() < 800) {
+            $("#navbar").removeClass('navbar-fixed-top');
+        } else {
+            $("#navbar").addClass('navbar-fixed-top');
+        }
+    });
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 500) {
+            $('#back-icon').addClass('show');
+        } else {
+            $('#back-icon').removeClass('show');
+        }
+    });
+    $("#back-icon").on("click", function () {
+        $("body,html").animate({scrollTop: 0}, 'slow');
+    });
 </script>
 </html>
 </body>

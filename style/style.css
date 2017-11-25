@@ -105,7 +105,11 @@ nav .nav-logo {
     text-align: left;
     padding-top: 1em; }
   .product-content .img-product {
-    float: left; }
+    float: left;
+    padding-right: 0.5em;
+    padding-bottom: 2em; }
+  .product-content .product-text {
+    text-align: justify; }
   .product-content h5 {
     font-weight: bold; }
 
@@ -218,5 +222,17 @@ nav .nav-logo {
     .footer .footer-link:hover {
       text-decoration: none;
       color: #22c2d7; }
+
+.cookies-message-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  float: left; }
+  .cookies-message-container a {
+    padding-right: 2em; }
 
 /*# sourceMappingURL=style.css.map */

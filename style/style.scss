@@ -103,7 +103,7 @@ nav {
 .same-background {
   background-image: url(../img/wykressrodek.jpg);
 }
-//description form
+//description-form
 .description-content {
   background-color: rgba(245, 238, 238, 0.8);
   text-align: center;
@@ -138,12 +138,17 @@ nav {
   }
   .img-product {
     float: left;
+    padding-right: 0.5em;
+    padding-bottom: 2em;
+  }
+  .product-text {
+    text-align: justify;
   }
   h5 {
     font-weight: bold;
   }
 }
-//team form
+//team-form
 .team-content {
   background-color: rgba(245, 238, 238, 0.8);
   text-align: center;
@@ -276,5 +281,19 @@ nav {
       text-decoration: none;
       color: $color-details-2nd;
     }
+  }
+}
+//cookies
+.cookies-message-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px;
+  background: rgba(0,0,0,0.8);
+  float: left;
+  a {
+    padding-right: 2em;
   }
 }
