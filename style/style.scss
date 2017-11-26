@@ -199,14 +199,14 @@ nav {
       line-height: 2;
       font-size: 16px;
       width: 100%;
-      border: 4px solid $color-details;
+      border: 2px solid $color-details;
       border-radius: 5px;
       outline: none;
-      margin: 5px;
+      margin: 5px 0;
       padding: 3px;
       color: #333;
       &:focus {
-        border: 4px solid $color-details-2nd;
+        border: 2px solid $color-details-2nd;
         -webkit-transition: border 0.3s ease;
         -moz-transition: border 0.3s ease;
         -o-transition: border 0.3s ease;
@@ -221,7 +221,8 @@ nav {
       color: #fff;
       font-weight: 800;
       border-radius: 5px;
-      margin: 30px 10auto;
+      display: block;
+      margin: 20px auto;
       border: 4px solid #fff;
       &:focus, &:hover {
         background-color: #7b1a9f;
