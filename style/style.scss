@@ -287,7 +287,11 @@ nav {
   font-size: 12px;
   background: rgba(0,0,0,0.8);
   float: left;
+  margin-bottom: 0;
   a {
     padding-right: 2em;
+  }
+  p {
+    font-size: 15px;
   }
 }
