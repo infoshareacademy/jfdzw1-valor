@@ -1,16 +1,20 @@
 let scoreboard = [];
 
-function initScoreboard () {
+function initScoreboard() {
 
 }
 
-function createPlayer () {
+function createPlayer(name, score) {
+  let player = {
+    name: name,
+    score: score
+  }
+}
+
+function insertPlayer() {
 
 }
 
-function insertPlayer () {
-
-}
-function getResults () {
+function getResults() {
 
 }
