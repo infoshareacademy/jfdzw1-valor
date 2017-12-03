@@ -11,8 +11,13 @@ function createPlayer(name, score) {
   }
 }
 
-function insertPlayer() {
-
+function insertPlayer(player) {
+  for (let i = 0; i < 5; i++) {
+    if (player.score > scoreboard[i].score) {
+      scoreboard.splice(i, 0, player);
+      scoreboard.pop();
+    }
+  }
 }
 
 function getResults() {
