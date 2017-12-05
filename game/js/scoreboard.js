@@ -4,11 +4,13 @@ initScoreboard();
 
 function initScoreboard() {
   insertPlayer(createPlayer("Nebula", 5000));
-  insertPlayer(createPlayer("Punisher", 4000));
+  insertPlayer(createPlayer("Punisher", 3999));
   insertPlayer(createPlayer("Spider", 166));
   insertPlayer(createPlayer("Dardevil", 3000));
   insertPlayer(createPlayer("Jesica", 4000));
   insertPlayer(createPlayer("Groot", 3500));
+  insertPlayer(createPlayer("Groot", 35000));
+  insertPlayer(createPlayer("Groot", 4500));
   console.log(scoreboard);
 }
 
