@@ -1,3 +1,85 @@
-
+@font-face {
+  font-family: 'Arcade';
+  src: url("../font/arcade.ttf"); }
+.game {
+  background-image: url("../img/play-stone-1744790_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: red;
+  border-top: 10px solid #22c2d7;
+  border-bottom: 10px solid #22c2d7;
+  border-right: 10px solid #22c2d7;
+  border-left: 10px solid #22c2d7; }
+  .game .game-field {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .game .game-field .nav-bar {
+      font-family: "Arcade";
+      z-index: 1000;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      height: 170px;
+      width: 120px;
+      background-color: #22c2d7;
+      border: 2px solid #22c2d7;
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+      line-height: 1; }
+      .game .game-field .nav-bar ul {
+        list-style-type: none;
+        top: 10px;
+        margin: 0px;
+        padding: 0px; }
+        .game .game-field .nav-bar ul li {
+          color: black;
+          margin: 5px; }
+          .game .game-field .nav-bar ul li:first-child {
+            text-align: left; }
+          .game .game-field .nav-bar ul li button {
+            width: 100%;
+            border: 2px solid black;
+            background: #7B1A9F; }
+    .game .game-field .left-upper-corner {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-top: 15px solid #22c2d7;
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-left: 15px solid #22c2d7; }
+    .game .game-field .left-bottom-corner {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid #22c2d7;
+      border-right: 15px solid transparent;
+      border-left: 15px solid #22c2d7; }
+    .game .game-field .right-bottom-corner {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid #22c2d7;
+      border-right: 25px solid #22c2d7;
+      border-left: 25px solid transparent; }
 
 /*# sourceMappingURL=style.css.map */

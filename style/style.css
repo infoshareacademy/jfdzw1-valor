@@ -86,16 +86,12 @@ nav .nav-logo {
   .description-content h2 {
     font-family: FreeSerif, serif;
     font-size: 3em;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 30px; }
   .description-content h4 {
     font-weight: bold; }
   .description-content p {
     text-align: justify; }
-  .description-content .desc-box {
-    width: 300px;
-    height: 300px;
-    padding-top: 40px;
-    padding-left: 40px; }
 
 .product-content {
   background-color: rgba(245, 238, 238, 0.8);
@@ -116,8 +112,7 @@ nav .nav-logo {
 .team-content {
   background-color: rgba(245, 238, 238, 0.8);
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px; }
+  padding-bottom: 30px; }
   .team-content h2 {
     font-family: FreeSerif, serif;
     font-size: 3em;
@@ -140,10 +135,10 @@ nav .nav-logo {
     text-align: right;
     padding-right: 40px; }
     .contact-content .contact-desc h2 {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 30px;
-      text-align: right;
-      color: #fff; }
+      color: #fff;
+      line-height: 1.3em; }
       .contact-content .contact-desc h2 span {
         background-color: #7b1a9f; }
     .contact-content .contact-desc h3 {
@@ -156,27 +151,28 @@ nav .nav-logo {
     line-height: 2;
     font-size: 16px;
     width: 100%;
-    border: 4px solid #7b1a9f;
+    border: 2px solid #7b1a9f;
     border-radius: 5px;
     outline: none;
-    margin: 5px;
+    margin: 5px 0;
     padding: 3px;
     color: #333; }
     .contact-content form input[type=text]:focus, .contact-content form textarea:focus {
-      border: 4px solid #22c2d7;
+      border: 2px solid #22c2d7;
       -webkit-transition: border 0.3s ease;
       -moz-transition: border 0.3s ease;
       -o-transition: border 0.3s ease;
       transition: border 0.3s ease;
       box-shadow: none; }
   .contact-content form input[type=submit] {
-    padding: 15px 40px;
+    padding: 15px 30px;
     background-color: #22c2d7;
-    font-size: 34px;
+    font-size: 1.8em;
     color: #fff;
     font-weight: 800;
     border-radius: 5px;
-    margin: 30px 10px;
+    display: block;
+    margin: 20px auto;
     border: 4px solid #fff; }
     .contact-content form input[type=submit]:focus, .contact-content form input[type=submit]:hover {
       background-color: #7b1a9f;
