@@ -11,7 +11,6 @@ function initScoreboard() {
   insertPlayer(createPlayer("Groot", 3500));
   insertPlayer(createPlayer("Groot", 35000));
   insertPlayer(createPlayer("Groot", 4500));
-  console.log(scoreboard);
 }
 
 function createPlayer(name, score) {
@@ -42,3 +41,4 @@ function getResults() {
   let result = scoreboard;
   return result;
 }
+
