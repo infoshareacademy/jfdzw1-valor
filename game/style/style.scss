@@ -7,7 +7,7 @@ $color-details-2: #22c2d7;
 }
 
 body {
-      font-family: "Arcade";
+  font-family: "Arcade";
 }
 
 .game {
@@ -97,6 +97,41 @@ body {
       border-right: 25px solid $color-details-2;
       border-left: 25px solid transparent;
     }
+    .top-score {
+      position: fixed;
+      left: 40px;
+      top: 10px;
+      width: 100px;
+      height: 30px;
+      background-color: $color-details;
+      font-size: 30px;
+      text-align: center;
+      color: white;
+      &:before {
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        content: " ";
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid $color-details;
+        border-right: 15px solid $color-details;
+        border-left: 15px solid transparent;
+      }
+      &:after {
+        position: fixed;
+        left: 140px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        content: " ";
+        border-top: 15px solid $color-details;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-left: 15px solid $color-details;
+      }
+    }
   }
 }
 
@@ -105,7 +140,7 @@ body {
   color: white;
   font-size: 22px;
   h4 {
-  font-size: 33px;
+    font-size: 33px;
   }
   button {
     border: 2px solid black;

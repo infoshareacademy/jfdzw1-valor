@@ -18,7 +18,9 @@
         <div class="nav-bar">
             <ul>
                 <li id="name">Kris</li>
-                <li id="score">0000000</li>
+                <li>
+                    <button id="scores-button">start</button>
+                </li>
                 <li>
                     <button id="scores-button" data-toggle="modal" data-target="#myModalHelp">help</button>
                 </li>
@@ -30,6 +32,7 @@
         <div class="left-upper-corner"></div>
         <div class="left-bottom-corner"></div>
         <div class="right-bottom-corner"></div>
+        <div class="top-score" id="score">0000000</div>
     </div>
 </div>
 <!-- Modal -->
@@ -70,15 +73,15 @@
     </div>
 </div>
 <script>
-    $(document).ready(function () {
-        $('#myModalScore').on('show.bs.modal', function (e) {
-            let results = getResults();
-            $('#game-scores').html('');
-            for (let i = 0; i < results.length; i++) {
-                $('#game-scores').append($(`<tr><td>${i + 1}</td><td>${results[i].name}</td><td> ${results[i].score} </td></tr>`));
-            }
-        });
+  $(document).ready(function () {
+    $('#myModalScore').on('show.bs.modal', function (e) {
+      let results = getResults();
+      $('#game-scores').html('');
+      for (let i = 0; i < results.length; i++) {
+        $('#game-scores').append($(`<tr><td>${i + 1}</td><td>${results[i].name}</td><td> ${results[i].score} </td></tr>`));
+      }
     });
+  });
 
 </script>
 </body>

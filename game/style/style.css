@@ -83,6 +83,38 @@ body {
       border-bottom: 25px solid #22c2d7;
       border-right: 25px solid #22c2d7;
       border-left: 25px solid transparent; }
+    .game .game-field .top-score {
+      position: fixed;
+      left: 40px;
+      top: 10px;
+      width: 100px;
+      height: 30px;
+      background-color: #7B1A9F;
+      font-size: 30px;
+      text-align: center;
+      color: white; }
+      .game .game-field .top-score:before {
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        content: " ";
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid #7B1A9F;
+        border-right: 15px solid #7B1A9F;
+        border-left: 15px solid transparent; }
+      .game .game-field .top-score:after {
+        position: fixed;
+        left: 140px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        content: " ";
+        border-top: 15px solid #7B1A9F;
+        border-bottom: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-left: 15px solid #7B1A9F; }
 
 .modal-content {
   background-color: #22c2d7;
