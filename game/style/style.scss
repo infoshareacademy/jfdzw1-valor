@@ -61,5 +61,38 @@ $color-details-2: #22c2d7;
         }
       }
     }
+    .left-upper-corner {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-top: 15px solid $color-details-2;
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-left: 15px solid $color-details-2;
+    }
+    .left-bottom-corner {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid $color-details-2;
+      border-right: 15px solid transparent;
+      border-left: 15px solid $color-details-2;
+    }
+    .right-bottom-corner {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid $color-details-2;
+      border-right: 25px solid $color-details-2;
+      border-left: 25px solid transparent;
+    }
   }
 }

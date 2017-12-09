@@ -51,5 +51,35 @@
             width: 100%;
             border: 2px solid black;
             background: #7B1A9F; }
+    .game .game-field .left-upper-corner {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-top: 15px solid #22c2d7;
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-left: 15px solid #22c2d7; }
+    .game .game-field .left-bottom-corner {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid #22c2d7;
+      border-right: 15px solid transparent;
+      border-left: 15px solid #22c2d7; }
+    .game .game-field .right-bottom-corner {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-top: 25px solid transparent;
+      border-bottom: 25px solid #22c2d7;
+      border-right: 25px solid #22c2d7;
+      border-left: 25px solid transparent; }
 
 /*# sourceMappingURL=style.css.map */
