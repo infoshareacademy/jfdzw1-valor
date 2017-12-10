@@ -7,14 +7,20 @@ function initGame() {
   $(document).keydown(function (e) {
     let pos = parseInt(($newPot).css('left'));
     if (e.keyCode === 37) {
+      pos -= 100;
+      if (pos > 50) {
       $($newPot).css({
-        'left': `${pos - 150}px`
+        'left': `${pos}px`
       })
+      }
     }
     if (e.keyCode === 39) {
-      $($newPot).css({
-        'left': `${pos + 150}px`
-      })
+      pos += 100;
+      if (pos < (window.innerWidth - 100)) {
+        $($newPot).css({
+          'left': `${pos}px`
+        })
+      }
     }
     e.preventDefault();
   });
