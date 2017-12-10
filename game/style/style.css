@@ -115,6 +115,12 @@ body {
         border-bottom: 15px solid transparent;
         border-right: 15px solid transparent;
         border-left: 15px solid #7B1A9F; }
+    .game .game-field .pot {
+      position: absolute;
+      width: 100px;
+      height: 25px;
+      background-color: #7B1A9F;
+      transition: all 0.3s ease; }
 
 .modal-content {
   background-color: #22c2d7;

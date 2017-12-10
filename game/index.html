@@ -11,10 +11,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <script type="text/javascript" src="js/scoreboard.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
 </head>
 <body>
 <div class="game">
-    <div class="game-field">
+    <div class="game-field" id="game-field">
         <div class="nav-bar">
             <ul>
                 <li id="name">Kris</li>
@@ -81,6 +82,7 @@
         $('#game-scores').append($(`<tr><td>${i + 1}</td><td>${results[i].name}</td><td> ${results[i].score} </td></tr>`));
       }
     });
+    initGame();
   });
 
 </script>
