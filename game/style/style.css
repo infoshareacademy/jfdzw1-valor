@@ -77,12 +77,12 @@ body {
       position: fixed;
       right: 10px;
       bottom: 10px;
-      width: 50px;
-      height: 50px;
-      border-top: 25px solid transparent;
-      border-bottom: 25px solid #22c2d7;
-      border-right: 25px solid #22c2d7;
-      border-left: 25px solid transparent; }
+      width: 30px;
+      height: 30px;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid #22c2d7;
+      border-right: 15px solid #22c2d7;
+      border-left: 15px solid transparent; }
     .game .game-field .top-score {
       position: fixed;
       left: 40px;
@@ -117,6 +117,7 @@ body {
         border-left: 15px solid #7B1A9F; }
     .game .game-field .pot {
       position: absolute;
+      bottom: 20px;
       width: 100px;
       height: 25px;
       background-color: #7B1A9F;

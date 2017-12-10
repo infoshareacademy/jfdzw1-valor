@@ -1,6 +1,5 @@
 function initGame() {
   let $newPot = $('<div class="pot" id="pot"></div>').css({
-    'bottom': '0px',
     'left': `${(window.innerWidth / 2 - 50)}px`
   }).appendTo('#game-field');
 
@@ -8,19 +7,17 @@ function initGame() {
     let pos = parseInt(($newPot).css('left'));
     if (e.keyCode === 37) {
       pos -= 100;
-      if (pos > 50) {
+      (pos < 10) ? pos =10 : pos;
       $($newPot).css({
         'left': `${pos}px`
       })
-      }
     }
     if (e.keyCode === 39) {
       pos += 100;
-      if (pos < (window.innerWidth - 100)) {
-        $($newPot).css({
-          'left': `${pos}px`
-        })
-      }
+      (pos > (window.innerWidth - 110)) ? pos = (window.innerWidth - 130) : pos;
+      $($newPot).css({
+        'left': `${pos}px`
+      })
     }
     e.preventDefault();
   });

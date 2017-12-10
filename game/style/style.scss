@@ -90,12 +90,12 @@ body {
       position: fixed;
       right: 10px;
       bottom: 10px;
-      width: 50px;
-      height: 50px;
-      border-top: 25px solid transparent;
-      border-bottom: 25px solid $color-details-2;
-      border-right: 25px solid $color-details-2;
-      border-left: 25px solid transparent;
+      width: 30px;
+      height: 30px;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid $color-details-2;
+      border-right: 15px solid $color-details-2;
+      border-left: 15px solid transparent;
     }
     .top-score {
       position: fixed;
@@ -134,6 +134,7 @@ body {
     }
     .pot {
       position: absolute;
+      bottom: 20px;
       width: 100px;
       height: 25px;
       background-color: $color-details;
