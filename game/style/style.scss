@@ -157,6 +157,13 @@ body {
       height: 50px;
       background-color: greenyellow;
       border-radius: 25px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      .glyphicon {
+        font-size: 30px;
+        color: black;
+      }
     }
     .life-background {
       position: absolute;

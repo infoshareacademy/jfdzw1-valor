@@ -26,8 +26,11 @@ function initGame() {
   let $life = 100;
   setInterval(function () {
     let $height = 1;
+    let points = ["leaf","tint","headphones", "heart", "glass", "usd", "flash"];
 
-    let $newCoin = $('<div class="coin-box" id="coin-box"></div>').css({
+
+    let $newCoin = $('<div class="coin-box" id="coin-box">' +
+      `<span class="glyphicon glyphicon-${points[Math.floor(Math.random()*points.length)]}" aria-hidden="true"></span></div>`).css({
       'top': `10px`,
       'left': `${Math.round(Math.random() * 775)}px`
     }).appendTo('#game-field');
