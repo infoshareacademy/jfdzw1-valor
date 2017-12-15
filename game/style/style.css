@@ -142,13 +142,13 @@ body {
       height: 4px;
       width: 100%;
       top: 0px;
-      background-color: white; }
+      background-color: cornflowerblue; }
     .game .game-field .life {
       position: absolute;
       height: 4px;
       width: 100%;
       top: 0px;
-      background-color: cornflowerblue;
+      background-color: white;
       z-index: 1000; }
 
 .modal-content {
