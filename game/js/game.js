@@ -25,9 +25,31 @@ function initGame() {
   setInterval(function () {
     let $height = 1;
     let $newCoin = $('<div class="coin-box" id="coin-box"></div>').css({
-      'top': `${$height*50}px`,
+      'top': `10px`,
       'left': `${Math.round(Math.random() * 775)}px`
     }).appendTo('#game-field');
+
+    setInterval(function () {
+      $newCoin.css({
+        'top': `${$height+=50}px`
+      });
+    }, 1000);
+
+    setTimeout(function () {
+      $newCoin.css({
+        'background-color': 'yellow'
+      });
+    }, 6000);
+    setTimeout(function () {
+      $newCoin.css({
+        'background-color': 'red'
+      });
+    }, 9000);
+
+    setTimeout(function () {
+      $newCoin.remove();
+    }, 12000);
+
   }, 1000);
 
 }
