@@ -126,7 +126,7 @@ body {
         border-left: 15px solid #7B1A9F; }
     .game .game-field .pot {
       position: absolute;
-      bottom: 10px;
+      bottom: 40px;
       width: 75px;
       height: 25px;
       background-color: white;
@@ -137,6 +137,19 @@ body {
       height: 50px;
       background-color: greenyellow;
       border-radius: 25px; }
+    .game .game-field .life-background {
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      top: 0px;
+      background-color: white; }
+    .game .game-field .life {
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      top: 0px;
+      background-color: cornflowerblue;
+      z-index: 1000; }
 
 .modal-content {
   background-color: #22c2d7;

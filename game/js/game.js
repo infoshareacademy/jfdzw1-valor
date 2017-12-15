@@ -7,7 +7,7 @@ function initGame() {
     let pos = parseInt(($newPot).css('left'));
     if (e.keyCode === 37) {
       pos -= 75;
-      (pos < 10) ? pos =10 : pos;
+      (pos < 10) ? pos = 10 : pos;
       $($newPot).css({
         'left': `${pos}px`
       })
@@ -22,16 +22,20 @@ function initGame() {
     e.preventDefault();
   });
 
+
+  let $life = 100;
   setInterval(function () {
     let $height = 1;
+
     let $newCoin = $('<div class="coin-box" id="coin-box"></div>').css({
       'top': `10px`,
       'left': `${Math.round(Math.random() * 775)}px`
     }).appendTo('#game-field');
 
+
     setInterval(function () {
       $newCoin.css({
-        'top': `${$height+=50}px`
+        'top': `${$height += 50}px`
       });
     }, 1000);
 
@@ -40,6 +44,7 @@ function initGame() {
         'background-color': 'yellow'
       });
     }, 6000);
+
     setTimeout(function () {
       $newCoin.css({
         'background-color': 'red'
@@ -48,6 +53,9 @@ function initGame() {
 
     setTimeout(function () {
       $newCoin.remove();
+      $('#life').css({
+        'width': `${$life-=2}%`
+      });
     }, 12000);
 
   }, 1000);

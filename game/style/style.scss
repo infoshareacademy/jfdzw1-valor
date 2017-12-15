@@ -145,7 +145,7 @@ body {
     }
     .pot {
       position: absolute;
-      bottom: 10px;
+      bottom: 40px;
       width: 75px;
       height: 25px;
       background-color: white;
@@ -157,6 +157,21 @@ body {
       height: 50px;
       background-color: greenyellow;
       border-radius: 25px;
+    }
+    .life-background {
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      top: 0px;
+      background-color: white;
+    }
+    .life {
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      top: 0px;
+      background-color: cornflowerblue;
+      z-index: 1000;
     }
   }
 }
