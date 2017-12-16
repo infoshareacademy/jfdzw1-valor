@@ -10,8 +10,9 @@ $color-details-4: #22c2d7;
 
 body {
   font-family: "Arcade";
-  background-image: url("../img/zombie-367517_1920.jpg");
+  background-image: url("../img/play-stone-1744790_1280.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-top: 10px solid $color-details-4;
   border-bottom: 10px solid $color-details-4;
   border-right: 10px solid $color-details-4;
@@ -25,10 +26,9 @@ body {
 }
 
 .game {
-  background-image: url("../img/zombie-367517_1920.jpg");
+  background-image: url("../img/play-stone-1744790_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   width: 865px;
   height: 620px;
   margin: 50px auto;
@@ -160,6 +160,7 @@ body {
       align-items: center;
       justify-content: center;
       display: flex;
+      transition: background-color 1s ease;
       .glyphicon {
         font-size: 30px;
         color: black;

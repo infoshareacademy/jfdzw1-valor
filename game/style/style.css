@@ -3,8 +3,9 @@
   src: url("../font/arcade.ttf"); }
 body {
   font-family: "Arcade";
-  background-image: url("../img/zombie-367517_1920.jpg");
+  background-image: url("../img/play-stone-1744790_1280.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-top: 10px solid #22c2d7;
   border-bottom: 10px solid #22c2d7;
   border-right: 10px solid #22c2d7;
@@ -17,10 +18,9 @@ body {
   height: 100%; }
 
 .game {
-  background-image: url("../img/zombie-367517_1920.jpg");
+  background-image: url("../img/play-stone-1744790_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   width: 865px;
   height: 620px;
   margin: 50px auto;
@@ -139,7 +139,8 @@ body {
       border-radius: 25px;
       align-items: center;
       justify-content: center;
-      display: flex; }
+      display: flex;
+      transition: background-color 1s ease; }
       .game .game-field .coin-box .glyphicon {
         font-size: 30px;
         color: black; }

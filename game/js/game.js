@@ -40,26 +40,26 @@ function initGame() {
       $newCoin.css({
         'top': `${$height += 50}px`
       });
+      console.log(`pot ${$newPot.position().left}`);
+      console.log(`coin ${$newCoin.position().left} ${$newCoin.position().top}`);
+
+      if ($newCoin.position().top > 300 ) {
+        $newCoin.css({
+          'background-color': 'yellow'
+        });
+      }
+      if ($newCoin.position().top > 450 ) {
+        $newCoin.css({
+          'background-color': 'red'
+        });
+      }
+      if ($newCoin.position().top > 600 ) {
+        $newCoin.remove();
+        $('#life').css({
+          'width': `${$life-=2}%`
+        });
+      }
     }, 1000);
-
-    setTimeout(function () {
-      $newCoin.css({
-        'background-color': 'yellow'
-      });
-    }, 6000);
-
-    setTimeout(function () {
-      $newCoin.css({
-        'background-color': 'red'
-      });
-    }, 9000);
-
-    setTimeout(function () {
-      $newCoin.remove();
-      $('#life').css({
-        'width': `${$life-=2}%`
-      });
-    }, 12000);
 
   }, 1000);
 
