@@ -34,6 +34,7 @@ function initGame() {
 
 
   let $life = 100;
+  let coinInterval;
   const interval = setInterval(function () {
     //clearInterval(interval)
     let $height = -50;
@@ -46,7 +47,7 @@ function initGame() {
       .data({coinValue: coinType.val})
       .appendTo('#game-field');
 
-    setInterval(function () {
+    coinInterval = setInterval(function () {
       $newCoin.css({
         'top': `${$height += 1}px`
       });
@@ -64,6 +65,9 @@ function initGame() {
         $('#life').css({
           'width': `${$life -= ($newCoin.data().coinValue) / 2}%`
         });
+        if ($life < 1) {
+          gameOver();
+        }
         $newCoin.remove();
       }
       checkCollision($newCoin)
@@ -83,33 +87,33 @@ function initGame() {
     cPos.bottom = cPos.top + coin.height();
     if (cPos.bottom > potPos.top) {
       if (cPos.left < potPos.left && cPos.right > potPos.left) {
-        pointsUpdate(coin.data().coinValue);
-        if ($life <= 99) {
-          $('#life').css({
-            'width': `${$life += 1}%`
-          });
-        }
-        coin.remove();
+        removeCoin(coin)
       }
       if (cPos.left < potPos.right && cPos.right > potPos.right) {
-        pointsUpdate(coin.data().coinValue);
-        if ($life <= 99) {
-          $('#life').css({
-            'width': `${$life += 1}%`
-          });
-        }
-        coin.remove();
+        removeCoin(coin)
       }
       if (cPos.left > potPos.left && cPos.right < potPos.right) {
-        pointsUpdate(coin.data().coinValue);
-        if ($life <= 99) {
-          $('#life').css({
-            'width': `${$life += 1}%`
-          });
-        }
-        coin.remove();
+        removeCoin(coin)
       }
     }
+  }
+
+  function removeCoin(coin) {
+    pointsUpdate(coin.data().coinValue);
+    if ($life <= 99) {
+      $('#life').css({
+        'width': `${$life += 1}%`
+      });
+    }
+    coin.remove();
+  }
+
+  function gameOver() {
+    $('#life').css({'width': '0%'});
+    clearInterval(interval);
+    clearInterval(coinInterval);
+    $('div.coin-box').remove();
+    $('<h1 class="game-over">GAME OVER</h1>').appendTo('#game-field');
   }
 }
 

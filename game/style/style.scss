@@ -44,6 +44,10 @@ body {
     width: 845px;
     height: 600px;
     overflow: hidden;
+    .game-over {
+      text-align: center;
+      color: white;
+    }
     .nav-bar {
       z-index: 1000;
       position: fixed;

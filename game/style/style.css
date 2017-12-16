@@ -36,6 +36,9 @@ body {
     width: 845px;
     height: 600px;
     overflow: hidden; }
+    .game .game-field .game-over {
+      text-align: center;
+      color: white; }
     .game .game-field .nav-bar {
       z-index: 1000;
       position: fixed;
