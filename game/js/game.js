@@ -24,7 +24,8 @@ function initGame() {
 
 
   let $life = 100;
-  setInterval(function () {
+  const interval = setInterval(function () {
+    //clearInterval(interval)
     let $height = -50;
     let points = ["leaf","tint","headphones", "heart", "glass", "usd", "flash"];
 
@@ -55,16 +56,28 @@ function initGame() {
           'width': `${$life-=2}%`
         });
       }
+      checkCollision($newCoin)
     }, 20);
-
   }, 1000);
 
-  function checkColision(coin) {
-
-    console.log(`pot ${$pot.position().left}`);
-    console.log(`coin ${$newCoin.position().left} ${$newCoin.position().top}`);
-
-
+  function checkCollision(coin) {
+    const cPos = coin.position();
+    cPos.right = cPos.left + coin.width()
+    const potPos = $pot.position();
+    potPos.right = potPos.left + $pot.width()
+    cPos.bottom = cPos.top + coin.height()
+    if (cPos.bottom > potPos.top ) {
+      //debugger
+      if (cPos.left < potPos.left && cPos.right > potPos.left) {
+        coin.remove();
+      }
+      if (cPos.left < potPos.right && cPos.right > potPos.right) {
+        coin.remove();
+      }
+      if (cPos.left > potPos.left && cPos.right < potPos.right) {
+        coin.remove();
+      }
+    }
   }
 }
 
