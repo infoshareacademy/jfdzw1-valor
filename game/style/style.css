@@ -34,7 +34,8 @@ body {
     background: rgba(0, 0, 0, 0.7);
     margin: auto;
     width: 845px;
-    height: 600px; }
+    height: 600px;
+    overflow: hidden; }
     .game .game-field .nav-bar {
       z-index: 1000;
       position: fixed;
@@ -140,7 +141,8 @@ body {
       align-items: center;
       justify-content: center;
       display: flex;
-      transition: background-color 1s ease; }
+      transition: background-color 1s ease;
+      overflow: hidden; }
       .game .game-field .coin-box .glyphicon {
         font-size: 30px;
         color: black; }
@@ -149,7 +151,8 @@ body {
       height: 4px;
       width: 100%;
       top: 0px;
-      background-color: cornflowerblue; }
+      background-color: cornflowerblue;
+      z-index: 800; }
     .game .game-field .life {
       position: absolute;
       height: 4px;

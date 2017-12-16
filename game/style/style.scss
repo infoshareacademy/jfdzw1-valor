@@ -43,6 +43,7 @@ body {
     margin: auto;
     width: 845px;
     height: 600px;
+    overflow: hidden;
     .nav-bar {
       z-index: 1000;
       position: fixed;
@@ -161,6 +162,7 @@ body {
       justify-content: center;
       display: flex;
       transition: background-color 1s ease;
+      overflow: hidden;
       .glyphicon {
         font-size: 30px;
         color: black;
@@ -172,6 +174,7 @@ body {
       width: 100%;
       top: 0px;
       background-color: cornflowerblue;
+      z-index: 800;
     }
     .life {
       position: absolute;

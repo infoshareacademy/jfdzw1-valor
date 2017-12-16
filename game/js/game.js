@@ -1,21 +1,21 @@
 function initGame() {
-  let $newPot = $('<div class="pot" id="pot"></div>').css({
+  let $pot = $('<div class="pot" id="pot"></div>').css({
     'left': `385px`
   }).appendTo('#game-field');
 
   $(document).keydown(function (e) {
-    let pos = parseInt(($newPot).css('left'));
+    let pos = parseInt(($pot).css('left'));
     if (e.keyCode === 37) {
       pos -= 75;
       (pos < 10) ? pos = 10 : pos;
-      $($newPot).css({
+      $($pot).css({
         'left': `${pos}px`
       })
     }
     if (e.keyCode === 39) {
       pos += 75;
       (pos > 760) ? pos = 760 : pos;
-      $($newPot).css({
+      $($pot).css({
         'left': `${pos}px`
       })
     }
@@ -25,24 +25,20 @@ function initGame() {
 
   let $life = 100;
   setInterval(function () {
-    let $height = 1;
+    let $height = -50;
     let points = ["leaf","tint","headphones", "heart", "glass", "usd", "flash"];
 
 
     let $newCoin = $('<div class="coin-box" id="coin-box">' +
       `<span class="glyphicon glyphicon-${points[Math.floor(Math.random()*points.length)]}" aria-hidden="true"></span></div>`).css({
-      'top': `10px`,
+      'top': `-50px`,
       'left': `${Math.round(Math.random() * 775)}px`
     }).appendTo('#game-field');
 
-
     setInterval(function () {
       $newCoin.css({
-        'top': `${$height += 50}px`
+        'top': `${$height += 1}px`
       });
-      console.log(`pot ${$newPot.position().left}`);
-      console.log(`coin ${$newCoin.position().left} ${$newCoin.position().top}`);
-
       if ($newCoin.position().top > 300 ) {
         $newCoin.css({
           'background-color': 'yellow'
@@ -53,15 +49,22 @@ function initGame() {
           'background-color': 'red'
         });
       }
-      if ($newCoin.position().top > 600 ) {
+      if ($newCoin.position().top > 551 ) {
         $newCoin.remove();
         $('#life').css({
           'width': `${$life-=2}%`
         });
       }
-    }, 1000);
+    }, 20);
 
   }, 1000);
 
+  function checkColision(coin) {
+
+    console.log(`pot ${$pot.position().left}`);
+    console.log(`coin ${$newCoin.position().left} ${$newCoin.position().top}`);
+
+
+  }
 }
 
