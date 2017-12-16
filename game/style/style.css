@@ -159,7 +159,8 @@ body {
       width: 100%;
       top: 0px;
       background-color: white;
-      z-index: 1000; }
+      z-index: 1000;
+      transition: all 1s ease; }
 
 .modal-content {
   background-color: #22c2d7;
