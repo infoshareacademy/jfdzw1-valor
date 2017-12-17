@@ -34,6 +34,9 @@ nav .nav-logo {
       padding-top: 10% !important; }
       .header .header-content-in h1 {
         font-size: 4em !important; } }
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
 .same-background {
   background-image: url(../img/wykressrodek.jpg); }
 

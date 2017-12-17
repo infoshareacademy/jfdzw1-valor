@@ -114,6 +114,9 @@ function initGame() {
     clearInterval(coinInterval);
     $('div.coin-box').remove();
     $('<h1 class="game-over">GAME OVER</h1>').appendTo('#game-field');
+    setTimeout(function () {
+      $('#scores-button').click();
+    }, 300);
   }
 }
 
