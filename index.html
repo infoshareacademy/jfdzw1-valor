@@ -252,14 +252,14 @@
                     Gwarantujemy bezpieczeństwo danych osobowych</p>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 contact-form">
-                <form action="mailto:newsletter@valor.com" method="post" enctype="text/plain">
+                <form>
                     <label for="name">imię</label><br>
-                    <input type="text" name="name"><br>
+                    <input id="nameform" type="text" name="name"><br>
                     <label for="mail">mail</label><br>
-                    <input type="text" name="mail"><br>
+                    <input id="mailform" type="text" name="mail"><br>
                     <label for="message">wiadomość</label><br>
                     <textarea name="message" id="message" cols="30" rows="5"></textarea><br>
-                    <input type="submit" value="Wyślij wiadomość">
+                    <input id="buttonform" type="submit" value="Wyślij wiadomość">
                 </form>
             </div>
         </div>
@@ -313,6 +313,12 @@
     $("#back-icon").on("click", function () {
         $("body,html").animate({scrollTop: 0}, 'slow');
     });
+</script>
+<script>
+    $("#buttonform").click(function () {
+        let name = $("#nameform").val()
+        window.open("./game/index.html?name=" + name)
+    })
 </script>
 <script>
     $(document).ready(function () {

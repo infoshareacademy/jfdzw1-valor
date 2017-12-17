@@ -20,7 +20,7 @@
         <div class="life-background"></div>
         <div class="nav-bar">
             <ul>
-                <li id="name">Kris</li>
+                <li id="playername">Kris</li>
                 <li>
                     <button id="scores-button">start</button>
                 </li>
@@ -84,9 +84,15 @@
         $('#game-scores').append($(`<tr><td>${i + 1}</td><td>${results[i].name}</td><td> ${results[i].score} </td></tr>`));
       }
     });
+
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var c = url.searchParams.get("name");
+      $("#playername").html(c);
     initGame();
   });
 
 </script>
+
 </body>
 </html>
